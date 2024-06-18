@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarking</title>
+    <style>
+        table {
+            width: 45%;
+            float: left;
+            margin-right: 5%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            background-color: aqua;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bookmarking Example</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>table one</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="javascript:void(0);" onclick="showInfo('Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ ⓘ; born 7 July 1981) is an Indian professional cricketer who plays as a right handed batter and a wicket-keeper. Widely regarded as one of the most prolific wicket-keeper-batsmen and captains, he represented the Indian cricket team and was the captain of the side in limited-overs formats from 2007 to 2017 and in test cricket from 2008 to 2014. Dhoni has captained the most international matches and is the most successful Indian captain. He has led India to victory in the 2011 Cricket World Cup, the 2007 ICC World Twenty20 and the 2013 ICC Champions Trophy, the only captain to win three different limited overs tournaments. He also led the teams that won the Asia Cup in 2010, 2016 and was a member of the title winning squad in 2018.')"style="text-decoration: none;" >MS DHONI</a></td>
+            </tr>
+            <tr>
+                <td><a href="javascript:void(0);" onclick="showInfo('Virat Kohli (Hindi pronunciation: [ʋɪˈɾɑːʈ ˈkoːɦli] ⓘ; born 5 November 1988) is an Indian international cricketer and the former captain of the Indian national cricket team. He is a right-handed batsman and an occasional medium-fast bowler.')" style="text-decoration: none;">VIRAT</a></td>
+            </tr>
+            <tr>
+                <td><a href="javascript:void(0);" onclick="showInfo('Rohit Gurunath Sharma (born 30 April 1987) is an Indian international cricketer who currently captains the India national cricket team across all formats. He is a right-handed batsman. Considered one of the best batsmen of his generation and one of the greatest opening batters of all time,[4] Sharma is known for his timing, elegance, six-hitting abilities and leadership skills. Sharma holds several batting records which famously include most sixes in international cricket,[a] most double centuries in ODI cricket (3), most centuries at Cricket World Cups (7) and joint most hundreds in Twenty20 Internationals (5). Rohit Sharma is the first player to score 5 T20I centuries.[6] He plays for Mumbai Indians in IPL and for Mumbai in domestic cricket.')" style="text-decoration: none;">ROHIT</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="infoTable">
+        <thead>
+            <tr>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="infoContent"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function showInfo(info) {
+            document.getElementById('infoContent').innerText = info;
+        }
+    </script>
+</body>
+</html>
